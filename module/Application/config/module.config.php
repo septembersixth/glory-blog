@@ -209,39 +209,4 @@ return array(
         [
         ],
     ],
-
-    'navigation' =>
-    [
-        'front' =>
-        [
-            [
-                'label'     => 'Home',
-                'route'     => 'home',
-            ],
-            [
-                'label'     => 'Humeur',
-                'route'     => 'tag',
-                'params'    =>
-                [
-                    'tagName' => 'humeur',
-                ],
-            ],
-            [
-                'label'     => 'Famille',
-                'route'     => 'tag',
-                'params'    =>
-                [
-                    'tagName'   => 'famille',
-                ],
-            ],
-            [
-                'label'     => 'Miam Miam',
-                'route'     => 'tag',
-                'params'    =>
-                [
-                    'tagName'   => 'miam_miam',
-                ],
-            ],
-        ],
-    ],
 );
