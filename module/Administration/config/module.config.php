@@ -140,9 +140,6 @@ return
         'factories' =>
         [
             'navigation'                                    => 'Zend\Navigation\Service\DefaultNavigationFactory',
-            'Zend\Authentication\AuthenticationService'     => function($serviceManager) {
-                return $serviceManager->get('doctrine.authenticationservice.orm_default');
-            }
         ],
 
         'shared' =>
@@ -215,20 +212,6 @@ return
 
     'doctrine' =>
     [
-        'authentication' =>
-        [
-            'orm_default' =>
-            [
-                'object_manager'      => 'Doctrine\ORM\EntityManager',
-                'identity_class'      => 'Administration\Entity\User',
-                'identity_property'   => 'login',
-                'credential_property' => 'password',
-                'credential_callable' => function(\Administration\Entity\User $user, $passwordGiven) {
-                    return $user->getPassword() === md5($passwordGiven);
-                },
-            ],
-        ],
-
         'driver' =>
         [
             'administration_entities' =>
