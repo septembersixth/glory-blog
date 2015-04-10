@@ -282,7 +282,7 @@ class Post
      */
     public function setImage($image)
     {
-        if (empty($prg['image']['error'])) {
+        if (empty($image['image']['error'])) {
             $this->image = substr(strrchr($image['tmp_name'], '/'), 1);
         }
         return $this;

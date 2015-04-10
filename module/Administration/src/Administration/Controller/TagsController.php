@@ -2,11 +2,9 @@
 
 namespace Administration\Controller;
 
-use Application\Entity\Post;
 use Application\Entity\Tag;
 use Doctrine\Common\Collections\ArrayCollection;
 use DoctrineModule\Paginator\Adapter\Collection;
-use Zend\Http\PhpEnvironment\Response;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\Paginator\Paginator;
 

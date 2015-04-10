@@ -215,31 +215,31 @@ return array(
         'front' =>
         [
             [
-                'label' => 'Home',
-                'route' => 'home',
+                'label'     => 'Home',
+                'route'     => 'home',
             ],
             [
-                'label' => 'Humeur',
-                'route' => 'tag',
-                'params' =>
+                'label'     => 'Humeur',
+                'route'     => 'tag',
+                'params'    =>
                 [
                     'tagName' => 'humeur',
                 ],
             ],
             [
-                'label' => 'Famille',
-                'route' => 'tag',
-                'params' =>
+                'label'     => 'Famille',
+                'route'     => 'tag',
+                'params'    =>
                 [
-                    'tagName' => 'famille',
+                    'tagName'   => 'famille',
                 ],
             ],
             [
-                'label' => 'Miam Miam',
-                'route' => 'tag',
-                'params' =>
+                'label'     => 'Miam Miam',
+                'route'     => 'tag',
+                'params'    =>
                 [
-                    'tagName' => 'miam_miam',
+                    'tagName'   => 'miam_miam',
                 ],
             ],
         ],
